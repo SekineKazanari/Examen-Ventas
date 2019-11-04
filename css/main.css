@@ -71,9 +71,6 @@
   left: 35%;
 }
 
-.header .menu input[type="checkbox"], .header .menu span{
-  display: none;
-}
 
 /*------------------------------ ESTILOS ------------------------------------*/
 
@@ -209,6 +206,7 @@ iframe {
 /* Imagenes */
 .noticia{
   height: 50%;
+  margin-left: 60px;
 }
 .not{
   width: 60%;
@@ -517,7 +515,13 @@ iframe {
 }
 
   .header{
-    padding-top: 50px;
+    position: relative;
+    top: -80px;
+    text-align: right;
+  }
+
+  .noticia{
+    margin-left: 0px;
   }
 
   .not{
