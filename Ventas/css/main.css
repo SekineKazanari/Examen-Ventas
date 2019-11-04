@@ -212,6 +212,10 @@ iframe {
   height: 40%;
 }
 
+.not1{
+  width: 60%;
+  margin-left: 60px;
+}
 
 .row{
   display: flex;
