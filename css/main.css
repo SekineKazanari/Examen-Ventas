@@ -23,11 +23,21 @@
 .fondoHeader {
   background-color: #00AAC8;
   height: 25%;
+  width: 100%;
+  padding-left: 50px;
 }
 
 .menu {
   margin: 0 50px;
 }
+
+.image{
+    max-width:6%;
+    width:auto;
+    height:auto;
+    position: relative;
+    top: 15px;
+  }
 
 /* footer */
 .footer{
@@ -39,27 +49,32 @@
 
 /* body */
 
-.inicio ul{
+.header ul{
   list-style: none;
   font-size: 18px;
 }
 
-.inicio ul li{
+.header ul li{
   display: inline-block;
   margin-left: 60px;
   font: 90% sans-serif;
 }
 
-.inicio ul li:not(first-child){
+.header ul li:not(first-child){
   margin-left: 25px;
 }
 
-.inicio {
+.header {
   width: 60%;
   position: relative;
   bottom: 55%;
   left: 35%;
 }
+
+.header .menu input[type="checkbox"], .header .menu span{
+  display: none;
+}
+
 /*------------------------------ ESTILOS ------------------------------------*/
 
 * {
@@ -74,7 +89,6 @@ body, html {
 }
 
 
-
 a {
 	font-family: Poppins-Regular;
 	font-size: 14px;
@@ -85,6 +99,7 @@ a {
 	-webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
+  text-decoration: none;
 }
 
 a:focus {
@@ -419,9 +434,113 @@ iframe {
 
 /*////////////////////////////// RESPONSIVO ////////////////////////////////////*/
 
-@media (max-width: 576px) {
-  .wrap-login100 {
-    padding-left: 15px;
-    padding-right: 15px;
+@media screen and (max-width: 1023px){
+
+  .image{
+    max-width:10%;
+    position: relative;
+    top: 15px;
+    right: 30px;
   }
-} 
+
+  .header{
+    height: auto;
+    position: relative;
+    bottom: 60px;
+  }
+
+  .header .menu{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .services-content{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .image{
+    max-width:14%;
+    position: relative;
+    top: 15px;
+    right: 30px;
+  }
+
+  .label-input100 {
+    font-size: 13px;
+  }
+
+  .input100 {
+    font-size: 13px;
+  }
+
+  .login100-form-btn {
+  font-size: 13px;
+  }
+
+  .login100-form-title {
+  width: 80%;
+  font-size: 28px;
+  position: relative;
+  bottom: 70px;
+  right: 5%;
+  }
+
+  .header{
+    padding-top: 30px;
+    position: relative;
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 668px){ 
+
+.menu{
+  margin: 0px;
+}
+
+  .image{
+    max-width:15%;
+    width:auto;
+    height:auto;
+    position: relative;
+    top: 20px
+  }
+
+  .login100-form-title {
+  width: 80%;
+  font-size: 20px;
+  position: relative;
+  bottom: 70px;
+  right: 2%;
+}
+
+  .header{
+    padding-top: 50px;
+  }
+
+  .not{
+    width: auto;
+    height: 20vh;
+  }
+
+  .footer{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 13px;
+  }
+
+  .login100-form-btn {
+  font-size: 10px;
+  }
+
+  .header ul li{
+  margin-left: 30px;
+  }
+
+  .header ul li:not(first-child){
+  margin-left: 15px;
+  }
+
+}
